@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: FakePearl-Regular;
+    src: url(https://cdn.jsdelivr.net/gh/max32002/FakePearl@1.1/webfont/FakePearl-Regular.woff2) format("woff2")
+    , url(https://cdn.jsdelivr.net/gh/max32002/FakePearl@1.1/webfont/FakePearl-Regular.woff) format("woff");
+}
+
+@layer components {
+    .block {
+        @apply  mb-2 text-slate-600
+    }
+
+    .title {
+        @apply  border-b-2 p-2 text-lg
+    }
+
+    .subtitle {
+        @apply list-disc mb-8
+    }
+
+    .content {
+        @apply p-8
+    }
+
+    .link {
+        @apply text-[#06b6d4] font-black
+    }
+
+    .caption {
+        @apply text-[1.2rem] font-bold
+    }
+}
